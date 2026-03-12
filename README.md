@@ -40,7 +40,7 @@ If you are a developer whose work is included here and would like credit added o
 
 1. Download or clone this repository
 
-git clone https://github.com/YOURUSERNAME/npc-chaos
+git clone https://github.com/deadeye3240/[npc-chaos]
 
 2. Place the resources into your FiveM server `resources` folder
 
@@ -64,5 +64,6 @@ Use at your own risk.
 ## Credits
 
 All scripts and original resources belong to their respective developers.
+
 
 This repository simply combines and configures them into one chaotic NPC experience.
