@@ -5,7 +5,7 @@ Config = {}
 -- "ORIGIN_DISPATCH" | "QB_DISPATCH" | "OX_DISPATCH" | "CD_DISPATCH" | "PS_DISPATCH" | "RC_DISPATCH" | "CUSTOM"
 Config.DispatchSystem = "QB_DISPATCH"
 
--- If using CUSTOM, set the event name to trigger on server (server will TriggerEvent)
+-- If using CUSTOM, set the event name to trigger on the server (server will TriggerEvent)
 Config.CustomDispatchEvent = "custom-dispatch:server:sendAlert"
 
 -- Map blip / alert settings
@@ -15,7 +15,7 @@ Config.AlertRequirePoliceJob = true
 -- ELK Menu integration: "qb-menu", "ox_lib", "native"
 Config.ELKMenu = "qb-menu" -- fallback supported: "ox_lib", "native"
 
--- Permissions: admin group name(s) that can use admin options
+-- Permissions: admin group names that can use admin options
 Config.AdminGroups = {"admin","superadmin"} 
 
 -- General toggles
@@ -25,22 +25,22 @@ Config.EnableKneel = true
 
 -- Language / text
 Config.Locale = {
-    hostage_prompt = "Presiona ~INPUT_CONTEXT~ para Someter al NPC",
-    elk_title = "Opciones de Rehenes",
-    elk_take_hostage = "Tomar como rehén",
-    elk_release = "Liberar",
-    elk_kill = "Rematar",
+    hostage_prompt = "Press ~INPUT_CONTEXT~ to Subdue the NPC",
+    elk_title = "Hostage Options",
+    elk_take_hostage = "Take Hostage",
+    elk_release = "Release",
+    elk_kill = "Execute",
 }
 
 Config.Hostage = {
-    FailChance = 20,          -- % de que el civil no obedezca
-    EscapeChance = 15,        -- % chance cada ciclo de que intente escapar
+    FailChance = 20,          -- % chance the civilian refuses to comply
+    EscapeChance = 15,        -- % chance each cycle that the NPC attempts to escape
     EnableHostageScreams = true,
-    NegotiationTime = 300,    -- segundos antes de alerta automática
+    NegotiationTime = 300,    -- seconds before automatic alert
 }
 
 Config.Hostage = {
-    EnableTestCommand = true,  -- Habilitar/deshabilitar comando de prueba
-    TestCommandName = "testhostage", -- commando 
-    TestNPCModel = "a_m_m_business_01" -- tipo de npc para la prueba ( x )
+    EnableTestCommand = true,  -- Enable/disable test command
+    TestCommandName = "testhostage", -- command name
+    TestNPCModel = "a_m_m_business_01" -- NPC model used for testing
 }
